@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Merienda&display=swap" rel="stylesheet">
+   
+</head>
+<body onload="nextQuestion()"  >
+    <div class="container" >
+        <h1 style="text-align: center; padding: 11px; font-size: 40px; font-weight: 35px;">Quiz App</h1>
+
+        <p id="timer">2:00</p>
+
+        <div>
+            <h1 id="ques"></h1>
+        </div>
+
+        <div class="opt">
+            <input type="radio" name="options" class="options" value="1"  onclick="clicked()">
+            <label for="opt1" id="label1"></label>
+        </div>
+
+        <br>
+
+        <div class="opt">
+            <input type="radio" name="options" class="options" value="2" onclick="clicked()">
+            <label for="opt2" id="label2"></label>
+        </div>
+
+        <br>
+
+        <div class="opt">
+            <input type="radio" name="options" class="options" value="3" onclick="clicked()">
+            <label for="opt3" id="label3"></label>
+        </div>
+
+        <br>
+
+       
+        <br>
+
+        <div  class="btn">
+            <button onclick="nextQuestion()" class="shah" id="btn" >NEXT</button>
+           
+        </div>
+    </div>
+<script src="page.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>
